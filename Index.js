@@ -18,7 +18,7 @@ const io = require("socket.io")(server, {
   },
 });
 
-const secret_key = process.env.SECRET_KEY;
+const secret_key = 'Abhishekgund0023@$9373170518Abhi@0023';
 
 // insert and get chats connection
 const chatschema = new mongoose.Schema({
