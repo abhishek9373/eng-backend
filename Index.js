@@ -18,6 +18,15 @@ const io = require("socket.io")(server, {
   },
 });
 
+io.set('https://engineerside.netlify.app');
+
+io.set('transports', ['websocket',
+    'flashsocket',
+    'htmlfile',
+    'xhr-polling',
+    'jsonp-polling',
+    'polling']);
+
 const secret_key = 'Abhishekgund0023@$9373170518Abhi@0023';
 
 // insert and get chats connection
